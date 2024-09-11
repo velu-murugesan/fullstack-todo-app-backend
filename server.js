@@ -18,7 +18,7 @@ const PORT = process.env.PORT || 8000;
 const app = express();
 
 const corsOptions = {
-  origin: "https://my-notes-mern.netlify.app/",
+  origin: "*",
 
   methods: ["GET", "POST"],
 
