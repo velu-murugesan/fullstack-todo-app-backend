@@ -6,6 +6,7 @@ export const getData = async (req, res) => {
     return res.status(200).json(data);
   } catch (error) {
     console.log("Error getting data", error);
+    res.send(500).json({ error: "Internal server error" });
   }
 };
 
@@ -20,6 +21,7 @@ export const createData = async (req, res) => {
     return res.status(201).send(newData);
   } catch (error) {
     console.log("Error creating data", error);
+    res.send(500).json({ error: "Internal server error" });
   }
 };
 
