@@ -18,7 +18,7 @@ const PORT = process.env.PORT || 8000;
 const app = express();
 
 const corsOptions = {
-  origin: "https://zesty-dragon-d490ee.netlify.app",
+  origin: "https://my-notes-mern.netlify.app/",
 
   methods: ["GET", "POST"],
 
